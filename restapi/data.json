@@ -1,0 +1,7 @@
+{
+    "messages": [
+        {"id": 1, "message": "This is message1 CONTAINERIZED"},
+        {"id": 2, "message": "This is message2 CONTAINERIZED"},
+        {"id": 3, "message": "This is message3 CONTAINERIZED"}
+    ]
+}

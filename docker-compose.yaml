@@ -1,0 +1,19 @@
+version: "3.8"
+services:
+  frontend:
+    image: 'myangularapp'
+    build:
+      context: ./
+    container_name: frontend
+    ports:
+      - '3001:4200'
+    depends_on:
+      - restapi
+  
+  restapi:
+    image: 'myrestapi'
+    build:
+      context: ./restapi
+    container_name: restapi
+    ports:
+      - '3000:3000'    

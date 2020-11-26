@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="container-fluid">
+    <div class="card">
+      <div class="card-header">
+          <h3 align="center">Angular App</h3>
+      </div>
+      <div class="card-body">
+        <h4>This app is containerized and will interact with a REST API in another container</h4>
+        <h5>Host name: {{ hostname }}</h5>
+        <button (click)="GetMessages()" class="btn btn-primary">
+          Get Messages (REST API)
+        </button>
+        <br/><br/><br/>
+        <div *ngFor="let m of messages">
+          <h6>Message Id: {{ m.id }}</h6>
+          <h6>Message: {{ m.message }}</h6>
+          <hr/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
